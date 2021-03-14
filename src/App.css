@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+.weatherapp{
+    min-height: 100vh;
+    max-height: 100vh;
+    max-width: 100vw;
+    padding: 30px;
+    padding-top: 5px;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.bg-image {
+    /* The image used */
+    background-image: url("../src/assests/background/cristina-gottardi-CSpjU6hYo_0-unsplash.jpg");
+
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aqua;
+    min-height: 100vh;
+    min-width: 100vw;
+    z-index: -2;
+    position: absolute;
+    filter: blur(4px);
+    padding: 0;
+
+}
+.navbar-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Bangers',cursive;
+   
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.title{
+    color: antiquewhite;
+    
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.search-bar{
+    z-index: 3;
 }
 
-.App-link {
-  color: #61dafb;
+.city-name{
+    font-size: 80px;
+    font-weight: 600;
+    font-style: oblique;
+    color: antiquewhite;
+    font-family: 'Bangers',
+    cursive;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title{
+    font-family: 'Bangers',cursive;
+    font-size: 3cm;
+}
+
+.line-temp{
+ width: 45%;
+}
+
+.logo{
+    height: 40vh;
+    width: 40vw;
+}
+
+.borderCard{
+    text-align: center;
+    border: 3px;
+    border-style: groove;
+    min-height: 50vh;
+    width: 70%;
+    border-color: aliceblue;
+    margin-top: 80px;
+    border-radius: 20px;
+    background: rgba(128, 184, 216, 0.45);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(20.0px);
+    -webkit-backdrop-filter: blur(20.0px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
