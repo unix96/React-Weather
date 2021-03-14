@@ -121,7 +121,7 @@ useEffect(() => {
 
         </Col>
         <Col className='d-inline-flex'>
-          {data.weather[0].main ? <img src={imageRender(data.weather[0].main)} className="logo"/> : <div></div> }
+          {data.weather[0].main ? <img src={imageRender(data.weather[0].main)} alt="" className="logo"/> : <div></div> }
           
         </Col>
       </Row>
